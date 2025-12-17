@@ -1,4 +1,4 @@
-eimport streamlit as st
+import streamlit as st
 import sqlite3
 import pandas as pd
 
@@ -27,4 +27,5 @@ if choice=="INSERT":
 if choice=="VIEW":
    data=cursor.execute("SELECT * FROM employee")
    st.dataframe(data)
+
 
